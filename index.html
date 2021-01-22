@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T.G Recorder</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		span{
+			color:red;
+			border: solid 2px black;
+			background-color: white;
+			padding-right:2%;
+			padding-left: 2%;
+		}
+		.row{
+			margin-top: 5%
+		}
+		#score1{
+			padding:5%;
+			font-size: 60px;
+			border:solid 7px black;
+			font-weight: bold;
+			color: black;
+		}
+		#score2{
+			padding:5%;
+			font-size: 60px;
+			border:solid 7px black;
+			font-weight: bold;
+			color:black;
+		}
+		#game{
+			border-bottom:solid 10px black;
+			text-shadow: 10px;
+			font-weight: bold;
+			text-align: center;
+		}
+		#player1{
+			padding:5%;
+			font-size: 30px;
+			font-weight: bold;
+			background-color: blue;
+			border-radius: 20px;
+		}
+		#player2{
+			padding:5%;
+			font-size: 30px;
+			font-weight: bold;
+			background-color: blue;
+			border-radius: 20px;
+		}
+		#reset{
+			padding:5%;
+			font-size: 30px;
+			border-radius: 50%;
+			background-color: blue;
+		}
+		#down{
+			margin-left: 0px !important;
+		}
+		.jumbotron{
+			background-image:url(https://free-3dtextureshd.com/wp-content/uploads/2019/05/classic-old-Wood-texture-plank-BPR-material-background-wooden-desk-table-or-floor-old-striped-timber-board-download-seamless-free-texture-high-resolution-4k-full-864x864.jpg);
+			margin-top: 15px;
+		}
+		#bold{
+			font-weight: bold;
+		}
+		#form{
+			font-size: 50px;
+		}
+		#total{
+			text-align: center;
+		}
+		.fa{
+			margin-left:2%;
+		}
+		#button{
+			font-weight: bold;
+			font-size:110%;
+		}
+		#center{
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="jumbotron container">
+		<h1 id="game">T.G Match Score Recorder</h1>
+		<div class="row" >
+			<div class="col-1"></div>
+			<div class="col-10">
+				<form id="total" class="row">
+					<input id="form" class="col-10" type="number" placeholder="Total Points" style="text-align: : center">
+					<button id="button" class="col-2">Done<i class="fa fa-thumbs-up"></i></button>
+				</form>
+			</div>
+			
+		</div>
+
+		<div class="row">
+			<div class="col-5">
+				<h2 style="text-align: right"><span id="name1">Team 1 </span></h2>
+			</div>
+			<div class="col-2">
+				<h2 id="bold"style="text-align: center">V/S</h2>
+			</div>
+			<div class="col-5">
+				<h2 style="text-align: left"><span id="name2">Team 2 </span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-5">
+				<h1 style="text-align: right"><span id="score1">0</span></h1>
+			</div>
+			<div class="col-2" style="text-align: center">
+				<h2 id="bold">to</h2>
+			</div>
+			<div class="col-5">
+				<h1 id="name2" style="text-align: left"><span id="score2">0</span></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-5" style="text-align:right">
+				<button id="player1">Score</button>
+			</div>
+			<div class="col-2"></div>
+			<div class="col-5" style="text-align: left">
+				<button id="player2">Score</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<button id="reset" class="col-6">Reset</button>
+			<div class="col-3"></div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">	
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 	<script type="text/javascript" src="score_keeper.js"></script>
+</body>
+</html>
